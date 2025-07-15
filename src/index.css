@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Flamenco:wght@300;400&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Cinzel:wght@400..900&family=Flamenco:wght@300;400&family=Quicksand:wght@300..700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-quicksand text-coral;
+  }
+  .h2 {
+    @apply text-2xl lg:text-4xl text-white font-bold;
+  }
+  .btn,
+  .input-control {
+    @apply text-[25px] h-16 rounded-full outline-none;
+  }
+  .btn {
+    @apply px-8 font-quicksand text-white bg-coral rounded-xl hover:bg-pinky hover:text-coral transition;
+  }
+  .input-control {
+      @apply w-full max-w-[514px] px-6 py-3 text-coral placeholder:text-coral 
+         bg-white/60 rounded-xl focus:outline-none focus:ring-2 focus:ring-coral 
+         backdrop-blur-sm shadow-md transition-all duration-300 transform 
+         focus:scale-[1.02];
+  }
+  .text-stroke-white {
+  -webkit-text-stroke: 0.5px white;
+  text-stroke: 1px white;
+}
+
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.input-control::placeholder {
+  opacity: 0.5; /* Slightly less than full opacity */
+}
