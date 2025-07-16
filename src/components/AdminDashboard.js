@@ -26,7 +26,7 @@ const AdminDashboard = () => {
 
   // Fetch reviews
   useEffect(() => {
-    axios.get('${BASE_URL}/reviews')
+    axios.get(`${BASE_URL}/reviews`)
       .then((res) => {
         setReviews(res.data);
         setLoading(false);
@@ -66,11 +66,11 @@ if (loading) return <p className="text-center text-coral mt-10">Loading reviews.
           </button>
         </div>
 
-        {reviews.length === 0 ? (
-          <p className="text-center text-gray-500">No reviews found.</p>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {reviews.map((review) => (
+            {Array.isArray(reviews) && reviews.length === 0 ? (
+              <p className="text-center text-gray-500">No reviews found.</p>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {Array.isArray(reviews) && reviews.map((review) => (
               <div key={review._id} className="bg-pinky rounded-xl shadow-lg p-6 border border-coral">
                 <h3 className="text-xl font-bold">{review.book}</h3>
                 <p><strong>Author:</strong> {review.author}</p>
