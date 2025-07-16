@@ -46,7 +46,7 @@ const Appointment = () => {
     };
 
     try {
-      await axios.post('${BASE_URL}/reviews', data);
+      await axios.post(`${BASE_URL}/reviews`, data);
       setSubmitted(true);
       form.current.reset();
         // Auto-hide after 3 seconds
