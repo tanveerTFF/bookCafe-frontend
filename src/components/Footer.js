@@ -17,11 +17,11 @@ const Footer = () => {
        justify-between text-white gap-y-4 text-center lg:text-left'>
         {/* logo */}
         <a href='#'>
-          <img src={Logo} alt='' className='h-8 w-auto' />
+          <img src={Logo} alt='' className='h-6 sm:h-8 lg:h-10 w-auto' />
 
         </a>
         {/* copyright text */}
-        <div className='text-[15px] text-coral font-quicksand'>
+        <div className='text-[15px] text-coral font-quicksand text-center w-full'>
           &copy; Copyright 2025 , All rights reserved by TanveerTFF
         </div>
         {/* socials */}
