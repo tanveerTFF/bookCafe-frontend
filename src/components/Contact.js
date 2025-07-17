@@ -1,5 +1,5 @@
 import React from 'react';
-import contactBg from '../assets/bgCover/pinkbg3.jpg'; // adjust path if needed
+import contactBg from '../assets/bgCover/pinkbg3.webp'; // adjust path if needed
 
 const Contact = () => {
   return (

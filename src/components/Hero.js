@@ -1,5 +1,5 @@
 import React from 'react';
-import heroBg from '../assets/bgCover/pinkbg3.jpg';
+import heroBg from '../assets/bgCover/pinkbg3.webp';
 
 import HeroSlider from '../components/HeroSlider';
 

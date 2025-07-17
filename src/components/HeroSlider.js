@@ -10,7 +10,7 @@ import '../swiper.css';
 import { Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 import { Autoplay } from 'swiper/modules';
-import bgHero from '../assets/bgCover/pinkbg1.jpg'; // adjust name if needed
+import bgHero from '../assets/bgCover/pinkbg1.webp'; // adjust name if needed
 
 
 import {heroSlider} from '../data'
