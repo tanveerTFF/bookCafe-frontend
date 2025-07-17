@@ -13,8 +13,8 @@ const Footer = () => {
   return ( 
   <footer className='bg-orange py-8 lg:py-4'>
     <div className='container mx-auto'>
-      <div className='flex text-white flex-col gap-y-6 lg:flex-row items-center
-      justify-between'>
+      <div className='flex flex-col lg:flex-row items-center
+       justify-between text-white gap-y-4 text-center lg:text-left'>
         {/* logo */}
         <a href='#'>
           <img src={Logo} alt='' className='h-8 w-auto' />
@@ -25,7 +25,7 @@ const Footer = () => {
           &copy; Copyright 2025 , All rights reserved by TanveerTFF
         </div>
         {/* socials */}
-        <div className='flex flex-col items-center gap-y-2'>
+        <div className='flex flex-col lg:flex-row items-center gap-y-2 lg:gap-x-4'>
           <div className='text-white text-lg font-semibold'>
             Get Your Own Webpage!
           </div>

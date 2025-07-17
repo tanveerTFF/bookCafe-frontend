@@ -10,14 +10,14 @@ const NavMobile = () => {
     h-full space-y-5'>
       {navigation.map((item, index) => {
       return ( 
-      <li className='capitalize font-quicksand text-xl text-coral'
+      <li className='capitalize font-cinzel text-xl text-coral'
        key={index}>
         <a href={item.href}>{item.name}</a>
       </li>
       );
       })}
       <li>
-      <a href="/login" className='text-coral text-xl font-quicksand'>
+      <a href="/login" className='text-coral text-xl font-cinzel'>
         Login
       </a>
       </li>

@@ -1,7 +1,7 @@
 // src/data.js
-import BookLoverSVG from './assets/undraw_book-lover_m9n3.svg';
-import RoundStudySVG from './assets/roundstufy.svg'
-import discoverBooksSVG from './assets/discoverBooks.svg'
+import BookLoverSVG from './assets/Bibliophile-amico.svg';
+import RoundStudySVG from './assets/Novelistwriting-pana.svg'
+import discoverBooksSVG from './assets/Bibliophile-pana.svg'
 import { FaFacebookF, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 
 export const navigation = [

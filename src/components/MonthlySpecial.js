@@ -1,8 +1,7 @@
-// src/components/MonthlySpecials.js
 import React from 'react';
 import MonthlyBookCard from './MonthlyBookCard';
 import { FaBookOpen, FaBookmark } from 'react-icons/fa';
-//importing the bookcovers here
+
 import RuthshawCover from '../assets/bookCoverforMonthlyRead/booksellerRuthshaw.jpg';
 import DoraKata from '../assets/bookCoverforMonthlyRead/DorakataZebracrossing.jpg';
 import FachukiFapor from '../assets/bookCoverforMonthlyRead/FachukiFapor.png';
@@ -14,7 +13,6 @@ import Basic_Ali_14 from '../assets/bookCoverforWishlist/Basic_Ali_14.png';
 import invisibleman from '../assets/bookCoverforWishlist/invisibleman.jpg';
 import JalajLocker from '../assets/bookCoverforWishlist/Jalaj_Locker.jpg';
 import supernova from '../assets/bookCoverforWishlist/supernova.jpg';
-
 
 const topReads = [
   { title: 'The Bookseller At The End Of The World', author: 'Ruth Shaw', image: RuthshawCover },
@@ -34,14 +32,17 @@ const wishlist = [
 
 const MonthlySpecials = () => {
   return (
-    <section id = "monthly" className="py-16 bg-pinky">
-      <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-cinzel text-center text-coral mb-10"> Monthly Specials</h2>
+    <section id="monthly" className="py-16 bg-pinky px-4 sm:px-6 md:px-8">
+      <div className="container mx-auto">
+        <h2 className="text-4xl sm:text-5xl font-cinzel text-center text-coral mb-10">
+          Monthly Specials
+        </h2>
 
         <div className="mb-12">
-          <h3 className="text-3xl font-quicksand mb-6 text-coral flex items-center gap-2">
-           <FaBookOpen className="text-2xl" /> Monthly Top 5 Reads</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <h3 className="text-2xl sm:text-3xl font-quicksand mb-6 text-coral flex items-center gap-2">
+            <FaBookOpen className="text-2xl" /> Monthly Top 5 Reads
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
             {topReads.map((book, index) => (
               <MonthlyBookCard key={index} {...book} />
             ))}
@@ -49,9 +50,10 @@ const MonthlySpecials = () => {
         </div>
 
         <div>
-          <h3 className="text-3xl font-quicksand mb-6 text-coral flex items-center gap-2">
-            <FaBookmark className="text-2xl" /> Top 5 Wishlist</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <h3 className="text-2xl sm:text-3xl font-quicksand mb-6 text-coral flex items-center gap-2">
+            <FaBookmark className="text-2xl" /> Top 5 Wishlist
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
             {wishlist.map((book, index) => (
               <MonthlyBookCard key={index} {...book} />
             ))}

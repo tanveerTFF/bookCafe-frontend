@@ -10,7 +10,7 @@ const Nav = () => {
       {navigation.map((item, index) => {
         return (
         <li key={index}>
-          <a className='capitalize text-coral text-3xl font-flamenco hover:text-bluegreeny 
+          <a className='capitalize text-coral text-3xl font-cinzel hover:text-white 
           transition' href={item.href}>{item.name}
           </a>
         </li>
@@ -22,7 +22,7 @@ const Nav = () => {
             href="/login"
             target="_blank"
             rel="noopener noreferrer"
-            className="capitalize text-coral text-3xl font-flamenco hover:text-bluegreeny transition"
+            className="capitalize text-coral text-3xl font-cinzel hover:text-white transition"
           >
           Login
           </a>
