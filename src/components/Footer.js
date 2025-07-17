@@ -17,7 +17,7 @@ const Footer = () => {
        justify-between text-white gap-y-4 text-center lg:text-left'>
         {/* logo */}
         <a href='#'>
-          <img src={Logo} alt='' className='h-6 sm:h-8 lg:h-10 w-auto' />
+          <img src={Logo} alt='' className='h-auto max-h-6 sm:max-h-8 lg:max-h-10 w-auto' />
 
         </a>
         {/* copyright text */}
