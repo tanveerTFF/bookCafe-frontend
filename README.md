@@ -11,7 +11,7 @@ Below is the documentation for `thecloudbookcafe.vercel.app`, a full-stack book 
 
 ## 🧠 Project Overview
 
-**The Cloud BookCafe** is a book review platform that enables authenticated admins to submit, manage, and display book reviews. The site showcases featured monthly reads and wishlist books, styled with TailwindCSS, and stores all reviews in a MongoDB database. Admin authentication is handled via Firebase.
+**The Cloud BookCafe** is a book review platform that enables users to submit and view book reviews & authenticated admins can manage, and display them. The site showcases featured monthly reads and wishlist books, styled with TailwindCSS, and stores all reviews in a MongoDB database. Admin authentication is handled via Firebase.
 
 ---
 
